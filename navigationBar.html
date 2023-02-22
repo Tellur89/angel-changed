@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title></title>
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!-- STYLE SHEET -->
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/fonts.css" />
+		<!-- BOOTSTRAP -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+			crossorigin="anonymous" />
+
+		<!-- FONTS -->
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;900&family=Libre+Baskerville:ital@0;1&family=Montserrat:wght@100;300;400;500;600;700&display=swap"
+			rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet" />
+
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="" />
+		<script defer src="/js/navigationBar.js"></script>
+		<script defer src="js/index.js"></script>
+		<script defer src="js/header.js"></script>
+		<script defer src="js/slider.js"></script>
+		<script defer src="js/offers.js"></script>
+	</head>
+	<body>
+		<template id="navTemplate">
+			<div class="nav__menu">
+				<div class="nav__menu--top">
+					<a class="nav__item nav__link" href="index.html">Home</a>
+					<a class="nav__item nav__link" href="https://dns.memsec.co.uk/ms7oo/index.php?s=mLMsob04">Order at Table</a>
+					<a class="nav__item nav__link" href="menus.html">Menus</a>
+				</div>
+				<div class="nav__menu--bottom">
+					<a class="nav__item nav__item--sml nav__link" href="https://floating-sands-17913.herokuapp.com/">Pre-order Form</a>
+					<a class="nav__item nav__item--sml nav__link" href="#contact">Contact Us</a>
+					<a class="nav__item nav__item--sml nav__link btn-whatson--nav">What's On</a>
+				</div>
+				<a href="https://dns.memsec.co.uk/ms7ortb/index.php?s=mLMsob04"><button id="btn-table" class="btn btn-transparent">Book a Table</button></a>
+			</div>
+
+			<div class="nav__sml">
+				<input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+				<label for="navi-toggle" class="navigation__button">
+					<span class="navigation__icon"> &nbsp; </span>
+				</label>
+				<div class="navigation__background"></div>
+				<div class="nav__sml--title">
+					<p class="nav__sml--heading heading-primary--header--sml">Angel and Harp</p>
+				</div>
+				<a href="https://dns.memsec.co.uk/ms7ortb/index.php?s=mLMsob04">
+					<button id="btn-table" class="btn btn-transparent btn--sml">Book a Table</button>
+				</a>
+
+				<nav class="navigation__nav">
+					<ul class="navigation__list">
+						<li class="navigation__item">
+							<a class="navigation__link" href="index.html">Home</a>
+						</li>
+						<li class="navigation__item">
+							<a class="navigation__link" href="https://dns.memsec.co.uk/ms7oo/index.php?s=mLMsob04"> Order at Table </a>
+						</li>
+						<li class="navigation__item">
+							<a class="navigation__link" href="menus.html">Menus</a>
+						</li>
+						<li class="navigation__item">
+							<a class="navigation__link" href="https://floating-sands-17913.herokuapp.com/">Pre-order Form</a>
+						</li>
+						<li class="navigation__item">
+							<a class="navigation__link" href="#contact">Contact Us</a>
+						</li>
+						<li class="navigation__item">
+							<a class="navigation__link" href="#whatson">What's On</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<h1 class="heading-primary--header title">Angel & Harp</h1>
+
+			<div class="slider section section--hidden">
+				<div class="slide">
+					<img src="img/hero1.jpg" class="slide__photo" alt="..." />
+				</div>
+				<div class="slide">
+					<img src="img/hero2.jpg" class="slide__photo" alt="..." />
+				</div>
+				<div class="slide">
+					<img src="img/hero3.jpg" class="slide__photo" alt="..." />
+				</div>
+				<div class="slide">
+					<img src="img/hero4.jpg" class="slide__photo" alt="..." />
+				</div>
+				<div class="slide">
+					<img src="img/hero5.jpg" class="slide__photo" alt="..." />
+				</div>
+				<div class="slide">
+					<img src="img/hero6.jpg" class="slide__photo" alt="..." />
+				</div>
+
+				<button class="slider__btn slider__btn--left">&larr;</button>
+				<button class="slider__btn slider__btn--right">&rarr;</button>
+				<div class="dots"></div>
+			</div>
+		</template>
+	</body>
+</html>
