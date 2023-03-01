@@ -12,24 +12,15 @@ const slider = function () {
 
 	const createDots = function () {
 		slides.forEach(function (_, i) {
-			dotContainer.insertAdjacentHTML(
-				'beforeend',
-				`<button class="dots__dot" data-slide="${i}"></button>`
-			);
+			dotContainer.insertAdjacentHTML('beforeend', `<button class="dots__dot" data-slide="${i}"></button>`);
 		});
 	};
 
 	const activateDot = function (slide) {
-		document
-			.querySelectorAll('.dots__dot')
-			.forEach((dot) => dot.classList.remove('dots__dot--active'));
+		document.querySelectorAll('.dots__dot').forEach((dot) => dot.classList.remove('dots__dot--active'));
 
 		document.querySelector(`.dots__dot[data-slide="${slide}"]`).classList.add('dots__dot--active');
 	};
-
-	// const firstSlide = function () {
-	//   curSlide;
-	// };
 
 	const goToSlide = function (slide) {
 		slides.forEach((s, i) => (s.style.transform = `translateX(${100 * (i - slide)}%)`));
@@ -55,21 +46,13 @@ const slider = function () {
 		activateDot(curSlide);
 	};
 
-	// const continueSlide = function () {
-	//   let i = 0;
-	//   while (i < 9) {
-	//     nextSlide();
-	//     i++;
-	//   }
-	// };
-
 	const init = function () {
 		goToSlide(curSlide);
 		createDots();
 		activateDot(curSlide);
 	};
 	init();
-	setInterval(nextSlide, 3000);
+	setInterval(nextSlide, 6000);
 
 	btnRight.addEventListener('click', nextSlide);
 	btnLeft.addEventListener('click', prevSlide);
