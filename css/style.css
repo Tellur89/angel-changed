@@ -248,7 +248,7 @@ p {
 .link-title {
   font-family: "Brush", serif;
   font-size: 3.2rem;
-  letter-spacing: 0.7rem;
+  letter-spacing: 0.1rem;
   font-weight: 300;
   color: white !important;
   text-transform: capitalize;
@@ -260,7 +260,8 @@ p {
     font-size: 2.2rem !important; }
   @media (max-width: 37.5em) {
     .link-title {
-      font-size: 1.9rem; } }
+      font-size: 5rem;
+      line-height: 9rem; } }
 
 .small-title {
   text-align: center;
@@ -1384,6 +1385,8 @@ p {
       align-items: center;
       justify-content: space-between; } }
   .info__div {
+    height: -webkit-min-content;
+    height: -moz-min-content;
     height: min-content;
     width: 40rem;
     text-align: center; }
@@ -1396,11 +1399,8 @@ p {
 
 .v-line {
   height: 40rem;
-  width: 3px;
-  background-image: -webkit-linear-gradient(bottom, #f0f0f0, #bababa, #f0f0f0);
-  background-image: -moz-linear-gradient(bottom, #f0f0f0, #bababa, #f0f0f0);
-  background-image: -ms-linear-gradient(bottom, #f0f0f0, #bababa, #f0f0f0);
-  background-image: -o-linear-gradient(bottom, #f0f0f0, #bababa, #f0f0f0);
+  width: 4px;
+  background-image: linear-gradient(to bottom, transparent, #384e6f, transparent);
   margin: 1rem 4rem;
   align-self: center; }
   @media (max-width: 75em) {
