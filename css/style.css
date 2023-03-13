@@ -190,7 +190,7 @@ p {
 
 .heading-secondary {
   color: #313131;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-family: "Brush", serif;
   font-size: 2rem;
   font-weight: 600;
@@ -207,7 +207,8 @@ p {
   letter-spacing: 0.6rem;
   text-align: center;
   width: 100%;
-  padding: 4rem 0 1rem 0; }
+  padding: 4rem 0 1rem 0;
+  text-transform: capitalize; }
 
 .text {
   font-family: "Montserrat", sans-serif !important;
@@ -246,11 +247,11 @@ p {
 
 .link-title {
   font-family: "Brush", serif;
-  font-size: 2.6rem;
-  letter-spacing: 0.9rem;
+  font-size: 3.2rem;
+  letter-spacing: 0.7rem;
   font-weight: 300;
   color: white !important;
-  text-transform: uppercase;
+  text-transform: capitalize;
   height: 100% !important;
   width: 100% !important;
   z-index: 99999;
