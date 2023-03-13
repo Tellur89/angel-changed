@@ -44,7 +44,7 @@ $breakpoint argument choices
     grid-area: 5/1/9/-1 !important; }
   .grid__item--6 {
     grid-area: 9/1/13/-1 !important;
-    background-image: url(../img/drinks.jpg) !important;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.25)), url(../img/drinks.jpg) !important;
     background-position: 50% 60% !important; } }
 
 @media (max-width: 600px) {
@@ -234,7 +234,7 @@ p {
   .text--sml {
     font-family: "Montserrat", sans-serif !important;
     font-size: 1.6rem !important;
-    font-weight: 300 !important; }
+    font-weight: 400 !important; }
   .text--bold {
     font-family: "Raleway", sans-serif !important;
     font-size: 2rem !important;
@@ -1344,18 +1344,20 @@ p {
         height: 50rem;
         background-size: cover; } }
     .grid-menus__item--1 {
-      background-image: url(../img/drinks.jpg); }
+      background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.25)), url(../img/drinks.jpg); }
     .grid-menus__item--2 {
-      background-image: linear-gradient(rgba(137, 168, 201, 0.55), rgba(78, 124, 173, 0.5), rgba(137, 168, 201, 0.55)), url(../img/breakfast.jpg); }
+      background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.25)), url(../img/breakfast.jpg); }
     .grid-menus__item--3 {
-      background-image: linear-gradient(rgba(137, 168, 201, 0.55), rgba(78, 124, 173, 0.5), rgba(137, 168, 201, 0.55)), url(../img/food.jpg); }
+      background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.25)), url(../img/food.jpg);
+      background-size: cover;
+      background-position: 80% 25%; }
     .grid-menus__item--4 {
-      background-image: linear-gradient(rgba(137, 168, 201, 0.55), rgba(78, 124, 173, 0.5), rgba(137, 168, 201, 0.55)), url(../img/kids.jpg); }
+      background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.25)), url(../img/kids.jpg); }
     .grid-menus__item--5 {
-      background-image: linear-gradient(rgba(137, 168, 201, 0.55), rgba(78, 124, 173, 0.5), rgba(137, 168, 201, 0.55)), url(../img/gluten.jpg);
+      background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.25)), url(../img/gluten.jpg);
       background-position: 30% 50%; }
     .grid-menus__item--6 {
-      background-image: linear-gradient(rgba(137, 168, 201, 0.55), rgba(78, 124, 173, 0.5), rgba(137, 168, 201, 0.55)), url(../img/roast.jpg); }
+      background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.25)), url(../img/roast.jpg); }
 
 .header {
   width: 100% !important;
@@ -1699,23 +1701,23 @@ tr {
       background-color: white;
       padding: 3rem; }
       .card-f__side--front--axe {
-        border: 1rem solid #6180af; }
+        border: 1rem solid #384e6f; }
       .card-f__side--front--white {
         border: 1rem solid #317075; }
       .card-f__side--front--duke {
-        border: 1rem solid #6180af; }
+        border: 1rem solid #384e6f; }
       .card-f__side--front--swan {
         border: 1rem solid #317075; }
     .card-f__side--back {
       transform: rotateY(180deg); }
       .card-f__side--back-axe {
-        background-image: linear-gradient(to right bottom, #7da7e6, #384e6f); }
+        background-color: #6180af; }
       .card-f__side--back-white {
-        background-image: linear-gradient(to right bottom, #46b9c1, #225d62); }
+        background-color: #317075; }
       .card-f__side--back-duke {
-        background-image: linear-gradient(to right bottom, #7da7e6, #384e6f); }
+        background-color: #384e6f; }
       .card-f__side--back-swan {
-        background-image: linear-gradient(to right bottom, #46b9c1, #225d62); }
+        background-color: #317075; }
   .card-f:hover .card-f__side--front {
     transform: rotateY(-180deg); }
   .card-f:hover .card-f__side--back {
@@ -1748,7 +1750,7 @@ tr {
   .card-f__icon {
     padding-bottom: 2rem;
     transition: all 0.4s ease;
-    color: #515757; }
+    color: #ffffff; }
     .card-f__icon:hover {
       transform: scale(1.2, 1.2);
       color: black; }
